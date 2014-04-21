@@ -8,6 +8,16 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
 
+    
+     <TextView
+        android:id="@+id/tvLoggedUser"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_alignParentLeft="true"
+    	android:text=""
+    	android:textSize="24sp"
+    	android:textAppearance="@android:attr/textAppearanceLarge" />
+     
     <Button
         android:id="@+id/buttonClock"
         android:layout_width="wrap_content"
