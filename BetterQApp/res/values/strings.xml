@@ -21,6 +21,13 @@
     
     <string name="search_text">Search Bands..</string>
     
+    <string name="checkbox_string">This is a checkbox</string>
+    <string name="check_box_not_checked">I am not checked</string>
+    <string name="hide_checkbox">Hide CheckBox</string>
     
-
+    <string name="radio_no_choice">No Choice Made</string>
+    <string name="choice_text1">Army</string>
+    <string name="choice_text2">Freedom</string>
+    <string name="choice_text3">Whatever</string>
+    
 </resources>
