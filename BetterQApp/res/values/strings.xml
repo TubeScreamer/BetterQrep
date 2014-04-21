@@ -30,4 +30,16 @@
     <string name="choice_text2">Freedom</string>
     <string name="choice_text3">Whatever</string>
     
+    <string-array name="visited_capitols">
+        <item>Jerusalem</item>
+        <item>London</item>
+        <item>Paris</item>
+        <item>Moscow</item>
+        <item>Prague</item>
+        <item>Brussels</item>
+        <item>Luxembourg City</item>
+        <item>Amsterdam</item>
+    </string-array>
+    <string name="city_prompt">Pick a City:</string>
+    
 </resources>

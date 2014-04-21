@@ -5,18 +5,23 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
+import android.widget.RatingBar;
+import android.widget.Spinner;
+import android.widget.Toast;
+import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.RatingBar.OnRatingBarChangeListener;
 import android.widget.TextView;
 
 /*
- *  check boxes				// UICheckBox
- *  combo boxes 			// UISpinner 
- *  radio buttons			// UIRadioGroup
- *  rate					// UIRatingsBar
- *  pictures
- *  slider
+ *  check boxes				// UICheckBox				V
+ *  combo boxes 			// UISpinner 				V
+ *  radio buttons			// UIRadioGroup				V
+ *  rate					// UIRatingsBar				V
  */
 public class UIElementsActivity extends Activity 
 {
@@ -63,7 +68,17 @@ public class UIElementsActivity extends Activity
 			@Override
 			public void onClick(View v) {
 				RadioButton rb = (RadioButton) v;
-				tv.setText(rb.getText() + " chosen");
+				String answer = "";
+				if(rb.getText().toString().toLowerCase().contains("army")){
+					answer = "Don't be so stupid!";
+				}
+				else if(rb.getText().toString().toLowerCase().contains("whatever")) {
+					answer = "You suck!";
+				}
+				else{
+					answer = "Right answer, bro!";
+				}
+				tv.setText(answer);
 			}
 		};
 		final RadioButton choice1 = (RadioButton) findViewById(R.id.choice1);
@@ -74,6 +89,39 @@ public class UIElementsActivity extends Activity
 
 		final RadioButton choice3 = (RadioButton) findViewById(R.id.choice3);
 		choice3.setOnClickListener(radioListener);
+		
+		/*
+		 * rating bar
+		 */
+		
+		final TextView tv2 = (TextView) findViewById(R.id.ui_textView2);
+        final RatingBar bar = (RatingBar) findViewById(R.id.ratingbar);
+        
+        bar.setOnRatingBarChangeListener(new OnRatingBarChangeListener() {
+			@Override
+			public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
+				tv2.setText("Rating: " + rating);
+			}
+		});
+        
+        /*
+         * Spinner
+         */
+        Spinner spinner = (Spinner) findViewById(R.id.spinner);
+		ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.visited_capitols, 
+				R.layout.dropdown_item);
+		spinner.setAdapter(adapter);
+		
+		spinner.setOnItemSelectedListener(new OnItemSelectedListener() {
+			public void onItemSelected(AdapterView<?> parent, View view, int pos, long id) {
+				Toast.makeText(parent.getContext(), "The city is " + parent.getItemAtPosition(pos).toString(),Toast.LENGTH_LONG)
+					.show();
+			}
+
+			public void onNothingSelected(AdapterView<?> parent) {
+				// nothing
+			}
+		});
 	}
 
 	@Override

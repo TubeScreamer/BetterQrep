@@ -55,5 +55,44 @@
             android:textSize="24sp" />
         
     </RadioGroup>
+    
+    <!-- ratting bar -->
+    <TextView
+        android:id="@+id/ui_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="24sp" >
+    </TextView>
+    <RatingBar
+        android:id="@+id/ratingbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.5" >
+    </RatingBar>
+    
+    <!-- combo box -->
+    <LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical"
+	    android:padding="10dip" >
+	
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dip"
+	        android:text="@string/city_prompt"
+	        android:textAppearance="@android:attr/textAppearanceLarge"
+	        android:textSize="24sp" />
+	
+	    <Spinner
+	        android:id="@+id/spinner"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:textSize="24sp" />
+
+	</LinearLayout>
 
 </LinearLayout>
