@@ -22,43 +22,50 @@ public final class R {
          */
         public static final int activity_horizontal_margin=0x7f040000;
         public static final int activity_vertical_margin=0x7f040001;
+        public static final int image_height=0x7f040003;
+        public static final int image_width=0x7f040002;
     }
     public static final class drawable {
-        public static final int ic_launcher=0x7f020000;
-        public static final int old_ic_launcher=0x7f020001;
+        public static final int b128=0x7f020000;
+        public static final int b256=0x7f020001;
+        public static final int b512=0x7f020002;
+        public static final int b64=0x7f020003;
+        public static final int ic_launcher=0x7f020004;
+        public static final int old_ic_launcher=0x7f020005;
     }
     public static final class id {
-        public static final int RelativeLayout1=0x7f090011;
-        public static final int action_settings=0x7f09001e;
+        public static final int RelativeLayout1=0x7f090012;
+        public static final int action_settings=0x7f09001f;
         public static final int analogClock1=0x7f090001;
-        public static final int bandName=0x7f090004;
-        public static final int button1=0x7f09000a;
-        public static final int buttonClock=0x7f09000d;
-        public static final int buttonList=0x7f09000e;
-        public static final int buttonMap=0x7f09000f;
-        public static final int buttonUI=0x7f090010;
-        public static final int choice1=0x7f09001a;
-        public static final int choice2=0x7f090018;
-        public static final int choice3=0x7f090019;
+        public static final int bandName=0x7f090005;
+        public static final int button1=0x7f09000b;
+        public static final int buttonClock=0x7f09000e;
+        public static final int buttonList=0x7f09000f;
+        public static final int buttonMap=0x7f090010;
+        public static final int buttonUI=0x7f090011;
+        public static final int choice1=0x7f09001b;
+        public static final int choice2=0x7f090019;
+        public static final int choice3=0x7f09001a;
         public static final int digitalClock1=0x7f090003;
-        public static final int editText1=0x7f090007;
-        public static final int editText2=0x7f090009;
-        public static final int listBands=0x7f090006;
-        public static final int location=0x7f090012;
-        public static final int mapButton=0x7f090013;
-        public static final int radioGroup=0x7f090017;
-        public static final int ratingbar=0x7f09001c;
-        public static final int searchBands=0x7f090005;
-        public static final int spinner=0x7f09001d;
+        public static final int editText1=0x7f090008;
+        public static final int editText2=0x7f09000a;
+        public static final int frame=0x7f090004;
+        public static final int listBands=0x7f090007;
+        public static final int location=0x7f090013;
+        public static final int mapButton=0x7f090014;
+        public static final int radioGroup=0x7f090018;
+        public static final int ratingbar=0x7f09001d;
+        public static final int searchBands=0x7f090006;
+        public static final int spinner=0x7f09001e;
         public static final int textView1=0x7f090000;
         public static final int textView2=0x7f090002;
-        public static final int textView3=0x7f090008;
-        public static final int textView4=0x7f09000b;
-        public static final int textView5=0x7f09000c;
-        public static final int ui_button=0x7f090015;
-        public static final int ui_checkbox=0x7f090014;
-        public static final int ui_textView=0x7f090016;
-        public static final int ui_textView2=0x7f09001b;
+        public static final int textView3=0x7f090009;
+        public static final int textView4=0x7f09000c;
+        public static final int textView5=0x7f09000d;
+        public static final int ui_button=0x7f090016;
+        public static final int ui_checkbox=0x7f090015;
+        public static final int ui_textView=0x7f090017;
+        public static final int ui_textView2=0x7f09001c;
     }
     public static final class layout {
         public static final int clock_screen=0x7f030000;
