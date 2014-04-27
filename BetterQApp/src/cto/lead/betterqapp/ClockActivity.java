@@ -23,6 +23,7 @@ public class ClockActivity extends Activity
 		ac.setSoundEffectsEnabled(true);
 		
 		DigitalClock dc = (DigitalClock)findViewById(R.id.digitalClock1);
+		
 		dc.setBackgroundColor(Color.MAGENTA);
 		
 		/*
